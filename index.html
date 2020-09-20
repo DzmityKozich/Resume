@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <title>My Resume</title>
+</head>
+
+<body>
+
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="ts" viewBox="0 0 128 128">
+            <path id="original-2" data-name="original" class="cls-2"
+                d="M1.5,63.91v62.5h125V1.41H1.5Zm100.73-5a15.56,15.56,0,0,1,7.82,4.5,20.58,20.58,0,0,1,3,4c0,.16-5.4,3.81-8.69,5.85-.12.08-.6-.44-1.13-1.23a7.09,7.09,0,0,0-5.87-3.53c-3.79-.26-6.23,1.73-6.21,5a4.58,4.58,0,0,0,.54,2.34c.83,1.73,2.38,2.76,7.24,4.86,8.95,3.85,12.78,6.39,15.16,10,2.66,4,3.25,10.46,1.45,15.24-2,5.2-6.9,8.73-13.83,9.9a38.32,38.32,0,0,1-9.52-.1,23,23,0,0,1-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34,9.34,0,0,1,1.15-.73L82,101l3.59-2.08.75,1.11a16.78,16.78,0,0,0,4.74,4.54c4,2.1,9.46,1.81,12.16-.62a5.43,5.43,0,0,0,.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48,16.48,0,0,1-3.43-6.25,25,25,0,0,1-.22-8c1.33-6.23,6-10.58,12.82-11.87A31.66,31.66,0,0,1,102.23,58.93ZM72.89,64.15l0,5.12H56.66V115.5H45.15V69.26H28.88v-5A49.19,49.19,0,0,1,29,59.09C29.08,59,39,59,51,59L72.83,59Z">
+            </path>
+        </symbol>
+
+        <symbol id="java" viewBox="0 0 128 128">
+            <path fill="#0074BD"
+                d="M52.581 67.817s-3.284 1.911 2.341 2.557c6.814.778 10.297.666 17.805-.753 0 0 1.979 1.237 4.735 2.309-16.836 7.213-38.104-.418-24.881-4.113zM50.522 58.402s-3.684 2.729 1.945 3.311c7.28.751 13.027.813 22.979-1.103 0 0 1.373 1.396 3.536 2.157-20.352 5.954-43.021.469-28.46-4.365z">
+            </path>
+            <path fill="#EA2D2E"
+                d="M67.865 42.431c4.151 4.778-1.088 9.074-1.088 9.074s10.533-5.437 5.696-12.248c-4.519-6.349-7.982-9.502 10.771-20.378.001 0-29.438 7.35-15.379 23.552z">
+            </path>
+            <path fill="#0074BD"
+                d="M90.132 74.781s2.432 2.005-2.678 3.555c-9.716 2.943-40.444 3.831-48.979.117-3.066-1.335 2.687-3.187 4.496-3.576 1.887-.409 2.965-.334 2.965-.334-3.412-2.403-22.055 4.719-9.469 6.762 34.324 5.563 62.567-2.506 53.665-6.524zM54.162 48.647s-15.629 3.713-5.534 5.063c4.264.57 12.758.439 20.676-.225 6.469-.543 12.961-1.704 12.961-1.704s-2.279.978-3.93 2.104c-15.874 4.175-46.533 2.23-37.706-2.038 7.463-3.611 13.533-3.2 13.533-3.2zM82.2 64.317c16.135-8.382 8.674-16.438 3.467-15.353-1.273.266-1.845.496-1.845.496s.475-.744 1.378-1.063c10.302-3.62 18.223 10.681-3.322 16.345 0 0 .247-.224.322-.425z">
+            </path>
+            <path fill="#EA2D2E"
+                d="M72.474 1.313s8.935 8.939-8.476 22.682c-13.962 11.027-3.184 17.313-.006 24.498-8.15-7.354-14.128-13.828-10.118-19.852 5.889-8.842 22.204-13.131 18.6-27.328z">
+            </path>
+            <path fill="#0074BD"
+                d="M55.749 87.039c15.484.99 39.269-.551 39.832-7.878 0 0-1.082 2.777-12.799 4.981-13.218 2.488-29.523 2.199-39.191.603 0 0 1.98 1.64 12.158 2.294z">
+            </path>
+            <path fill="#EA2D2E"
+                d="M94.866 100.181h-.472v-.264h1.27v.264h-.47v1.317h-.329l.001-1.317zm2.535.066h-.006l-.468 1.251h-.216l-.465-1.251h-.005v1.251h-.312v-1.581h.457l.431 1.119.432-1.119h.454v1.581h-.302v-1.251zM53.211 115.037c-1.46 1.266-3.004 1.978-4.391 1.978-1.974 0-3.045-1.186-3.045-3.085 0-2.055 1.146-3.56 5.738-3.56h1.697v4.667h.001zm4.031 4.548v-14.077c0-3.599-2.053-5.973-6.997-5.973-2.886 0-5.416.714-7.473 1.622l.592 2.493c1.62-.595 3.715-1.147 5.771-1.147 2.85 0 4.075 1.147 4.075 3.521v1.779h-1.424c-6.921 0-10.044 2.685-10.044 6.723 0 3.479 2.058 5.456 5.933 5.456 2.49 0 4.351-1.028 6.088-2.533l.316 2.137h3.163v-.001zM70.694 119.585h-5.027l-6.051-19.689h4.391l3.756 12.099.835 3.635c1.896-5.258 3.24-10.596 3.912-15.733h4.271c-1.143 6.481-3.203 13.598-6.087 19.688zM89.982 115.037c-1.465 1.266-3.01 1.978-4.392 1.978-1.976 0-3.046-1.186-3.046-3.085 0-2.055 1.149-3.56 5.736-3.56h1.701v4.667h.001zm4.033 4.548v-14.077c0-3.599-2.059-5.973-6.999-5.973-2.889 0-5.418.714-7.475 1.622l.593 2.493c1.62-.595 3.718-1.147 5.774-1.147 2.846 0 4.074 1.147 4.074 3.521v1.779h-1.424c-6.923 0-10.045 2.685-10.045 6.723 0 3.479 2.056 5.456 5.93 5.456 2.491 0 4.349-1.028 6.091-2.533l.318 2.137h3.163v-.001zM37.322 122.931c-1.147 1.679-3.005 3.008-5.037 3.757l-1.989-2.345c1.547-.794 2.872-2.075 3.489-3.269.532-1.063.753-2.43.753-5.701v-22.482h4.284v22.173c0 4.375-.348 6.144-1.5 7.867z">
+            </path>
+        </symbol>
+
+        <symbol id="spring" viewBox="0 0 767.8 768">
+            <path class="st0"
+                d="M698.3 40c-10.8 25.8-24.5 50.3-41 72.8C585.1 40.6 487.1 0 385 0 173.8 0 0 174 0 385.5 0 491 43.2 592 119.6 664.8l14.2 12.6c69.4 58.5 157.3 90.7 248 90.7 200.8 0 369.6-157.4 383.9-358 10.5-98.2-18.3-222.4-67.4-370.1zm-524 627c-6.2 7.7-15.7 12.2-25.6 12.2-18.1 0-32.9-14.9-32.9-33s14.9-33 32.9-33c7.5 0 14.9 2.6 20.7 7.4 14.1 11.4 16.3 32.3 4.9 46.4zm522.4-115.4c-95 126.7-297.9 84-428 90.1 0 0-23.1 1.4-46.3 5.2 0 0 8.7-3.7 20-8 91.3-31.8 134.5-38 190-66.5 104.5-53.2 207.8-169.6 229.3-290.7C621.9 398.2 501.3 498.3 391.4 539c-75.3 27.8-211.3 54.8-211.3 54.8l-5.5-2.9C82 545.8 79.2 345.1 247.5 280.3c73.7-28.4 144.2-12.8 223.8-31.8 85-20.2 183.3-84 223.3-167.2 44.8 133.1 98.7 341.5 2.1 470.3z" />
+        </symbol>
+
+        <symbol id="angular" viewBox="0 0 256 272">
+            <path d="M.1 45.522L125.908.697l129.196 44.028-20.919 166.45-108.277 59.966-106.583-59.169L.1 45.522z"
+                fill="#E23237" />
+            <path d="M255.104 44.725L125.908.697v270.444l108.277-59.866 20.919-166.55z" fill="#B52E31" />
+            <path
+                d="M126.107 32.274L47.714 206.693l29.285-.498 15.739-39.347h70.325l17.233 39.845 27.99.498-82.179-174.917zm.2 55.882l26.496 55.383h-49.806l23.31-55.383z"
+                fill="#FFF" />
+        </symbol>
+
+        <symbol id="idea" viewBox="0 0 256 256">
+            <!-- <defs> -->
+            <linearGradient x1="0%" y1="50%" x2="99.799%" y2="50%" id="a">
+                <stop stop-color="#F97A12" offset="26%" />
+                <stop stop-color="#B07B58" offset="46%" />
+                <stop stop-color="#577BAE" offset="72%" />
+                <stop stop-color="#1E7CE5" offset="91%" />
+                <stop stop-color="#087CFA" offset="100%" />
+            </linearGradient>
+            <linearGradient x1=".345%" y1="34.54%" x2="121.182%" y2="77.619%" id="b">
+                <stop stop-color="#F97A12" offset="0%" />
+                <stop stop-color="#CB7A3E" offset="7%" />
+                <stop stop-color="#9E7B6A" offset="15%" />
+                <stop stop-color="#757B91" offset="24%" />
+                <stop stop-color="#537BB1" offset="33%" />
+                <stop stop-color="#387CCC" offset="43%" />
+                <stop stop-color="#237CE0" offset="54%" />
+                <stop stop-color="#147CEF" offset="66%" />
+                <stop stop-color="#0B7CF7" offset="79%" />
+                <stop stop-color="#087CFA" offset="100%" />
+            </linearGradient>
+            <linearGradient x1="78.169%" y1="97.749%" x2="30.106%" y2="-6.624%" id="c">
+                <stop stop-color="#FE315D" offset="0%" />
+                <stop stop-color="#CB417E" offset="8%" />
+                <stop stop-color="#9E4E9B" offset="16%" />
+                <stop stop-color="#755BB4" offset="25%" />
+                <stop stop-color="#5365CA" offset="34%" />
+                <stop stop-color="#386DDB" offset="44%" />
+                <stop stop-color="#2374E9" offset="54%" />
+                <stop stop-color="#1478F3" offset="66%" />
+                <stop stop-color="#0B7BF8" offset="79%" />
+                <stop stop-color="#087CFA" offset="100%" />
+            </linearGradient>
+            <linearGradient x1="20%" y1="24.087%" x2="103.422%" y2="132.676%" id="d">
+                <stop stop-color="#FE315D" offset="0%" />
+                <stop stop-color="#F63462" offset="4%" />
+                <stop stop-color="#DF3A71" offset="10%" />
+                <stop stop-color="#C24383" offset="17%" />
+                <stop stop-color="#AD4A91" offset="29%" />
+                <stop stop-color="#755BB4" offset="55%" />
+                <stop stop-color="#1D76ED" offset="92%" />
+                <stop stop-color="#087CFA" offset="100%" />
+            </linearGradient>
+            <!-- </defs> -->
+            <path fill="url(#a)" d="M64.8 199.6l-62-48.8 30.8-57.2L122 128z" />
+            <path fill="url(#b)" d="M256 68.4l-4.8 148-98.4 39.6-59.2-38.4L180 128l-37.6-83.2 34-40.8z" />
+            <path fill="url(#c)" d="M256 68.4l-78 92-35.6-115.6 34-40.8z" />
+            <path fill="url(#d)" d="M123.2 212.4L20.8 249.6 37.2 192l21.2-71.2L0 101.2 37.2 0l80 9.6 79.2 90.4z" />
+            <path d="M48 48h160v160H48z" />
+            <path
+                d="M63.2 178h60v10h-60v-10zM106 80.8v-12H73.2v12h9.2v42h-9.2v12.4H106v-12.4h-9.2v-42h9.2zm32 55.2a26.84 26.84 0 0 1-13.2-2.8 31.48 31.48 0 0 1-8.8-7.2l9.2-10.4a29.88 29.88 0 0 0 5.6 4.8 11.72 11.72 0 0 0 6.4 1.6 7.44 7.44 0 0 0 6.4-2.8 11.72 11.72 0 0 0 2.4-8.4V68h14.8v43.2a27.08 27.08 0 0 1-1.6 10.4 20 20 0 0 1-5.6 8.8A28.6 28.6 0 0 1 138 136z"
+                fill="#FFF" />
+        </symbol>
+
+        <symbol id="visual" viewBox="-11.9 -2 1003.9 995.6">
+            <path d="m12.1 353.9s-24-17.3 4.8-40.4l67.1-60s19.2-20.2 39.5-2.6l619.2 468.8v224.8s-.3 35.3-45.6 31.4z"
+                fill="#2489ca" />
+            <path d="m171.7 498.8-159.6 145.1s-16.4 12.2 0 34l74.1 67.4s17.6 18.9 43.6-2.6l169.2-128.3z"
+                fill="#1070b3" />
+            <path d="m451.9 500 292.7-223.5-1.9-223.6s-12.5-48.8-54.2-23.4l-389.5 354.5z" fill="#0877b9" />
+            <path
+                d="m697.1 976.2c17 17.4 37.6 11.7 37.6 11.7l228.1-112.4c29.2-19.9 25.1-44.6 25.1-44.6v-671.2c0-29.5-30.2-39.7-30.2-39.7l-197.7-95.3c-43.2-26.7-71.5 4.8-71.5 4.8s36.4-26.2 54.2 23.4v887.5c0 6.1-1.3 12.1-3.9 17.5-5.2 10.5-16.5 20.3-43.6 16.2z"
+                fill="#3c99d4" />
+        </symbol>
+
+        <symbol id="sql" viewBox="-.004 -5.603 388.133 269.897">
+            <path
+                d="m93.312 240.773h-14.975c-.527-25.345-1.987-49.177-4.373-71.501h-.132l-22.8 71.501h-11.404l-22.663-71.501h-.134c-1.681 21.44-2.74 45.272-3.18 71.501h-13.655c.882-31.899 3.09-61.802 6.625-89.715h18.561l21.606 65.92h.132l21.739-65.92h17.76c3.889 32.691 6.185 62.603 6.89 89.715m64.965-66.19c-6.099 33.177-14.143 57.287-24.127 72.328-7.78 11.589-16.302 17.383-25.582 17.383-2.474 0-5.525-.747-9.145-2.231v-7.998c1.769.26 3.844.398 6.23.398 4.33 0 7.819-1.2 10.473-3.594 3.18-2.918 4.77-6.198 4.77-9.832 0-2.482-1.24-7.576-3.711-15.281l-16.436-51.173h14.712l11.796 38.272c2.65 8.69 3.756 14.756 3.313 18.214 6.452-17.278 10.959-36.108 13.523-56.486h14.183"
+                fill="#00758f" />
+            <g fill="#f29111">
+                <path
+                    d="m223.875 215.906c0 7.608-2.788 13.854-8.346 18.741-5.562 4.866-13.035 7.305-22.392 7.305-8.752 0-17.234-2.807-25.45-8.377l3.843-7.706c7.07 3.544 13.47 5.313 19.214 5.313 5.389 0 9.607-1.202 12.658-3.578 3.045-2.393 4.87-5.73 4.87-9.963 0-5.327-3.706-9.88-10.504-13.7-6.276-3.454-18.818-10.663-18.818-10.663-6.796-4.97-10.203-10.304-10.203-19.091 0-7.268 2.54-13.142 7.616-17.611 5.086-4.479 11.648-6.718 19.684-6.718 8.307 0 15.86 2.223 22.663 6.652l-3.456 7.7c-5.82-2.475-11.56-3.717-17.22-3.717-4.592 0-8.13 1.105-10.598 3.33-2.48 2.204-4.014 5.041-4.014 8.499 0 5.313 3.786 9.922 10.775 13.816 6.355 3.455 19.205 10.804 19.205 10.804 6.99 4.961 10.473 10.251 10.473 18.964" />
+                <path
+                    d="m250.647 222.826c-3.625-5.848-5.44-15.233-5.44-28.173 0-22.59 6.85-33.893 20.546-33.893 7.16 0 12.416 2.704 15.777 8.105 3.62 5.85 5.435 15.154 5.435 27.913 0 22.771-6.851 34.162-20.546 34.162-7.159 0-12.416-2.701-15.772-8.113m53.284 20.11-16.446-8.132c1.464-1.204 2.855-2.503 4.114-4.007 6.983-8.23 10.477-20.413 10.477-36.542 0-29.68-11.62-44.529-34.86-44.529-11.4 0-20.284 3.764-26.645 11.302-6.985 8.24-10.473 20.378-10.473 36.415 0 15.77 3.09 27.339 9.276 34.688 5.636 6.642 14.16 9.968 25.57 9.968 4.258 0 8.164-.526 11.714-1.577l21.418 12.497 5.84-10.084"
+                    fill-rule="evenodd" />
+                <path
+                    d="m357.618 240.773h-42.546v-89.715h14.317v78.679h28.229zm10.21-.009h2.372v-9.128h3.104v-1.864h-8.701v1.864h3.225zm18.051 0h2.236v-10.992h-3.363l-2.737 7.492-2.98-7.492h-3.24v10.992h2.115v-8.366h.12l3.121 8.366h1.612l3.116-8.366z" />
+            </g>
+            <g fill="#00758f" fill-rule="evenodd">
+                <path
+                    d="m375.589 121.008c-8.653-.217-15.354.648-20.974 3.035-1.622.65-4.213.65-4.435 2.71.87.865.975 2.273 1.737 3.47 1.294 2.169 3.56 5.09 5.618 6.612 2.27 1.736 4.541 3.464 6.922 4.98 4.214 2.614 8.972 4.125 13.075 6.727 2.386 1.516 4.756 3.465 7.142 5.096 1.185.866 1.935 2.278 3.455 2.814v-.328c-.762-.973-.974-2.382-1.727-3.472-1.08-1.076-2.163-2.058-3.246-3.137-3.137-4.227-7.034-7.909-11.24-10.944-3.462-2.391-11.034-5.644-12.434-9.643l-.22-.221c2.38-.22 5.195-1.089 7.464-1.746 3.67-.973 7.022-.753 10.806-1.726 1.732-.437 3.462-.982 5.2-1.515v-.983c-1.957-1.946-3.357-4.552-5.41-6.393-5.51-4.768-11.571-9.426-17.84-13.334-3.356-2.168-7.68-3.57-11.25-5.418-1.29-.652-3.45-.973-4.21-2.063-1.947-2.384-3.033-5.523-4.435-8.346-3.132-5.955-6.165-12.565-8.863-18.862-1.945-4.225-3.135-8.45-5.514-12.354-11.14-18.432-23.244-29.59-41.84-40.54-4-2.28-8.756-3.255-13.833-4.447-2.707-.114-5.408-.325-8.11-.431-1.733-.762-3.465-2.823-4.976-3.799-6.165-3.9-22.05-12.353-26.594-1.19-2.92 7.05 4.325 13.984 6.812 17.563 1.837 2.49 4.218 5.313 5.51 8.127.757 1.843.974 3.798 1.734 5.746 1.728 4.769 3.347 10.082 5.622 14.528 1.185 2.277 2.481 4.665 3.994 6.715.873 1.2 2.382 1.734 2.707 3.692-1.508 2.165-1.626 5.417-2.49 8.129-3.89 12.25-2.379 27.424 3.137 36.42 1.726 2.71 5.84 8.673 11.353 6.391 4.865-1.947 3.784-8.126 5.188-13.543.324-1.31.107-2.17.753-3.035v.219c1.513 3.03 3.031 5.95 4.435 8.995 3.357 5.306 9.19 10.836 14.058 14.518 2.588 1.959 4.643 5.314 7.886 6.51v-.328h-.212c-.651-.973-1.622-1.41-2.488-2.165-1.945-1.952-4.102-4.338-5.622-6.505-4.539-6.068-8.544-12.792-12.104-19.729-1.735-3.368-3.245-7.05-4.652-10.408-.647-1.295-.647-3.252-1.73-3.9-1.626 2.381-3.999 4.444-5.186 7.362-2.056 4.666-2.27 10.41-3.033 16.375-.43.113-.212 0-.43.215-3.455-.866-4.645-4.443-5.945-7.468-3.243-7.706-3.788-20.063-.973-28.953.753-2.272 4.006-9.426 2.703-11.594-.654-2.068-2.813-3.25-4-4.882-1.403-2.06-2.925-4.656-3.888-6.937-2.597-6.068-3.902-12.792-6.704-18.86-1.298-2.823-3.573-5.75-5.405-8.347-2.058-2.927-4.326-4.986-5.95-8.451-.536-1.195-1.294-3.148-.432-4.444.212-.869.651-1.196 1.518-1.413 1.397-1.193 5.402.322 6.805.972 4.003 1.622 7.354 3.148 10.701 5.42 1.516 1.086 3.137 3.145 5.08 3.692h2.275c3.458.753 7.352.21 10.598 1.19 5.726 1.842 10.914 4.551 15.566 7.479 14.158 8.998 25.834 21.792 33.722 37.073 1.3 2.49 1.846 4.769 3.033 7.365 2.27 5.322 5.084 10.742 7.35 15.94 2.269 5.095 4.435 10.294 7.683 14.528 1.617 2.272 8.105 3.465 11.025 4.658 2.158.972 5.514 1.841 7.461 3.032 3.675 2.272 7.343 4.878 10.808 7.375 1.726 1.3 7.133 4.008 7.459 6.179" />
+                <path
+                    d="m265.314 26.797a17.27 17.27 0 0 0 -4.432.545v.217h.21c.873 1.73 2.388 2.932 3.46 4.447.87 1.735 1.629 3.463 2.492 5.2.107-.107.21-.22.21-.22 1.525-1.08 2.28-2.812 2.28-5.418-.653-.764-.755-1.517-1.3-2.279-.647-1.081-2.053-1.623-2.92-2.492" />
+            </g>
+        </symbol>
+
+        <symbol id="postman" viewBox="0 0 2491 2491">
+            <path
+                d="m1245.5 2397.8c636.4 0 1152.3-515.9 1152.3-1152.3s-515.9-1152.3-1152.3-1152.3-1152.3 515.9-1152.3 1152.3 515.9 1152.3 1152.3 1152.3zm0 93.2c-687.9 0-1245.5-557.6-1245.5-1245.5s557.6-1245.5 1245.5-1245.5 1245.5 557.6 1245.5 1245.5-557.6 1245.5-1245.5 1245.5z"
+                fill="#f4815b" />
+            <g clip-rule="evenodd" fill-rule="evenodd">
+                <path
+                    d="m2075.7 614.5c-350.3-453.4-1001.7-537-1455.1-186.7-453.3 350.3-536.9 1001.7-186.6 1455 350.2 453.4 1001.6 537.1 1455 186.8 453.4-350.2 537-1001.8 186.7-1455.1z"
+                    fill="#ff6c37" />
+                <path
+                    d="m1458.8 898.6c-74.7 34.1-196.3 137.2-393.6 333.7l56.1 56.1 18.7 18.8 381.3-381.3c11.9-11.9 27-17.9 42.5-20.6-28.3-21.2-55.5-29.3-105-6.7m168.2 145.5-399.1 350.7c35.5 35.6 55 55 65 65.1 158.1-150 308.6-303 334.1-415.8m-681.7 309.9c.6 1 1.2.9 1.8.8l161.7-34.9-65.5-65.4-97.8 97.7c-.3.2-.8.6-.2 1.8m733.1-541.9 135.3-135.3c-27.3-21.3-60.4-31.8-93.5-31.8-39.1 0-78.2 14.8-107.6 44.3-28.8 28.8-44.6 67-44.6 107.7s15.8 79 44.6 107.8c44.2 44.3 111.1 57 168.5 31.9l-102.6-102.5c-2.9-2.9-4.6-6.9-4.6-11-.1-4.2 1.6-8.1 4.5-11.1"
+                    fill="#fff" />
+                <path
+                    d="m1823.5 847.4c-2.7 0-5.4-1-7.7-2.8-5-4.2-5.8-11.8-1.5-16.9 9.1-11 10.8-26.3 4.3-39-2.9-5.9-.5-13.1 5.4-16.1 5.9-2.9 13.1-.5 16.1 5.4 10.6 21.2 7.7 46.8-7.5 65-2.2 2.8-5.6 4.4-9.1 4.4m12.8-149.3-124.9 125.1 97.6 97.6c6.8-4.8 13.1-10.2 19.1-16 28.8-28.8 44.6-67.1 44.6-107.8 0-36.6-12.8-71.2-36.4-98.9m-293 249.7-380.2 380.3 43.7 43.7 402.6-353.6c10.1-8.9 15.9-21.3 16.3-34.7.4-13.5-4.6-26.2-14.1-35.8-18.8-18.7-49.4-18.7-68.3.1m-709.4 811.1s.1 0 .2-.1c181.3-90.9 327.8-184.4 435.6-278l-61.5-61.4-161.6 25.1-320 320 102.4 102.4c2.5 2.4 5 1.8 6.7 1 1.7-1 3.5-2.8 2.8-6.2l-17.5-74.9c-2.6-11.2 2.7-22.6 12.9-27.9m-37.1 119.8-92.2-92.2-78.2 78.2c-.3.2-.6.6-.3 1.4.3.9.9 1 1.2 1zm291.2-475.5h.3c.3 0 .9.1 1.2.1l90.9-11.8-40.2-40.4z"
+                    fill="#fff" />
+                <path
+                    d="m1840.2 778c-2.9-5.9-10.2-8.4-16.2-5.4-5.9 2.9-8.3 10.1-5.4 16.1 6.4 12.7 4.7 28-4.4 39-4.3 5.1-3.5 12.7 1.6 16.9 2.2 1.8 4.9 2.8 7.7 2.8 3.5 0 6.8-1.6 9.2-4.4 15.2-18.2 18.1-43.8 7.5-65"
+                    fill="#ff6c37" />
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">My Resume</a>
+                <nav class="nav">
+                    <a href="https://github.com/DzmityKozich" target="_blank" class="nav__link">GitHub</a>
+                    <a href="mailto:dmitry.kozich@gmail.com" class="nav__link">Email</a>
+                    <a href="https://www.linkedin.com/in/dmitry-kozich-88b9631b7/" target="_blank" class="nav__link">LinkedIn</a>
+                    <a href="#" class="nav__link">link4</a>
+                </nav>
+            </div> <!-- / .header__inner -->
+        </div> <!-- / .container -->
+    </header>
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. <br>Lorem ipsum dolor sit amet.</h1>
+                <button class="btn btn__animate intro__btn">See my resume</button>
+            </div>
+        </div>
+    </div> <!-- / .intro -->
+
+    <!-- Profile -->
+    <section class="profile">
+        <div class="container">
+            <div class="profile__inner">
+                <div class="profile__content">
+                    <h1 class="profile__title">About Me</h1>
+                    <div class="profile__text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                            blanditiis rem saepe odio, repellendus sapiente.
+                            Quis in repellendus voluptate. Temporibus, nulla blanditiis atque nisi
+                            natus nobis minima vitae, repudiandae eveniet mollitia tempore asperiores
+                            fugiat ad odio. Minus facilis est voluptatibus delectus
+                            exercitationem a, optio beatae quo dolorem saepe, at vel?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                            blanditiis rem saepe odio, repellendus sapiente.
+                            Quis in repellendus voluptate. Temporibus, nulla blanditiis atque nisi
+                            natus nobis minima vitae, repudiandae eveniet mollitia tempore asperiores
+                            fugiat ad odio. Minus facilis est voluptatibus delectus
+                            exercitationem a, optio beatae quo dolorem saepe, at vel?</p>
+                    </div>
+                </div> <!-- / .profile__content -->
+
+                <div class="profile__credential">
+                    <img class="img" src="image/my-photo.jpg" alt="">
+                    <div class="profile__info">
+                        <div class="profile__city">City: Minsk</div>
+                        <time datetime="04-15-2000" class="profile__birthday">Birthday: 04.15.2000
+                    </div>
+                </div>
+            </div>
+        </div> <!-- / .profile__inner -->
+        </div> <!-- / .container -->
+    </section> <!-- / .pofile -->
+
+    <!-- Skills -->
+    <section class="skills">
+        <div class="container">
+            <div class="skills__inner">
+                <div class="skills__item skills__item--rb skills__item--lb">
+                    <div class="skills__imgs">
+                        <svg class="skills__img skills__img--ts">
+                            <use xlink:href="#ts"></use>
+                        </svg>
+
+                        <svg class="skills__img">
+                            <use xlink:href="#java"></use>
+                        </svg>
+                    </div>
+
+                    <p>
+                        <span class="skill__title">languages:</span> Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Sapiente modi nihil impedit.
+                    </p>
+                </div>
+
+                <div class="skills__item skills__item--lb skills__item--rb">
+                    <div class="skills__imgs">
+                        <svg class="skills__img">
+                            <use href="#angular"></use>
+                        </svg>
+
+                        <svg class="skills__img skills__img--spring">
+                            <use href="#spring"></use>
+                        </svg>
+                    </div>
+
+                    <p>
+                        <span class="skill__title">Frameworks:</span> Lorem ipsum dolor, sit amet consectetur
+                        adipisicing
+                        elit. Sapiente modi nihil impedit.
+                    </p>
+                </div>
+
+                <div class="skills__item skills__item--lb skills__item--rb">
+                    <div class="skills__imgs">
+                        <img class="skills__img" src="image/icons/intellij-idea.svg" alt="">
+
+                        <svg class="skills__img">
+                            <use href="#visual"></use>
+                        </svg>
+                    </div>
+
+                    <p>
+                        <span class="skill__title">IDE:</span> Lorem ipsum dolor, sit amet consectetur
+                        adipisicing
+                        elit. Sapiente modi nihil impedit.
+                    </p>
+                </div>
+
+                <div class="skills__item skills__item--lb skills__item--rb">
+                    <div class="skills__imgs">
+                        <svg class="skills__img">
+                            <use href="#sql"></use>
+                        </svg>
+
+                        <svg class="skills__img">
+                            <use href="#postman"></use>
+                        </svg>
+                    </div>
+
+                    <p>
+                        <span class="skill__title">others:</span> Lorem ipsum dolor, sit amet consectetur
+                        adipisicing
+                        elit. Sapiente modi nihil impedit.
+                    </p>
+                </div>
+            </div> <!-- / .skill__inner -->
+        </div> <!-- / .container -->
+    </section> <!-- / .skills -->
+
+    <!-- Projects -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects__inner">
+                <div class="project__item">
+                    <img src="https://placehold.it/400x250" alt="" class="img projects__img">
+                    <div class="project__info">
+                        <h3 class="projects__title">Project</h3>
+                        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+                            excepturi odio nesciunt non iste magnam recusandae officia corrupti doloremque, dolores
+                            suscipit, unde ullam voluptatum velit optio reprehenderit blanditiis vero ad consequuntur
+                            amet
+                            at tempora voluptates quo?
+                        </p>
+                        <div class="projects__btn">
+                            <button class="btn btn--sm btn__animate">see project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <img src="https://placehold.it/400x250" alt="" class="img projects__img">
+                    <div class="project__info">
+                        <h3 class="projects__title">Project</h3>
+                        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+                            excepturi odio nesciunt non iste magnam recusandae officia corrupti doloremque, dolores
+                            suscipit, unde ullam voluptatum velit optio reprehenderit blanditiis vero ad consequuntur
+                            amet
+                            at tempora voluptates quo?
+                        </p>
+                        <div class="projects__btn">
+                            <button class="btn btn--sm btn__animate">see project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <img src="https://placehold.it/400x250" alt="" class="img projects__img">
+                    <div class="project__info">
+                        <h3 class="projects__title">Project</h3>
+                        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+                            excepturi odio nesciunt non iste magnam recusandae officia corrupti doloremque, dolores
+                            suscipit, unde ullam voluptatum velit optio reprehenderit blanditiis vero ad consequuntur
+                            amet
+                            at tempora voluptates quo?
+                        </p>
+                        <div class="projects__btn">
+                            <button class="btn btn--sm btn__animate">see project</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- / .header__inner -->
+        </div> <!-- / .container -->
+    </section> <!-- / .projects -->
+    
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__lincks">
+                    <a class="footer__link" href="#">link1</a>
+                    <a class="footer__link" href="#">link2</a>
+                    <a class="footer__link" href="#">link3</a>
+                    <a class="footer__link" href="#">link4</a>
+                </div>
+                <div class="creator">&copy; Kozich Dmitry</div>
+                <button class="btn btn--sm btn btn__animate btn__animate--gray">See my resume</button>
+            </div>
+        </div> <!-- / .container -->
+    </section> <!-- / .footer -->
+
+</body>
+
+</html>
