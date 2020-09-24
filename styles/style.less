@@ -3,7 +3,7 @@
 @white: #ffffff;
 @green: #80ea6e;
 @gray: #bbbbcc;
-@font: ~"'Titillium Web', sans-serif";//~"'Open Sans', sans-serif" "'Titillium Web', sans-serif";
+@font: ~"'Titillium Web', sans-serif"; //~"'Open Sans', sans-serif" "'Titillium Web', sans-serif";
 
 // Base
 *,
@@ -344,13 +344,13 @@ body {
 
 .project__item {
     position: relative;
-    max-width: 33.33333%;
     width: 32%;
     height: 520px;
     border: 2px lighten(@gray, 18%) solid;
     border-radius: 7px;
     overflow: hidden;
     transition: .1s linear;
+    margin: 0 auto;
 
     &:hover {
         box-shadow: 0px 0px 25px lighten(@gray, 10%);
@@ -382,7 +382,7 @@ body {
     transition: height .4s linear;
 
     &:hover {
-        height: 90%;
+        height: 85%;
     }
 }
 
@@ -392,7 +392,7 @@ body {
     height: 50%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .projects__text {
@@ -401,11 +401,16 @@ body {
     color: lighten(@black, 20%);
     font-size: 16px;
     font-weight: 300;
+    height: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .projects__title {
     text-transform: uppercase;
     cursor: pointer;
+    text-decoration: none;
+    color: @black;
     transition: color .1s linear;
 
     &:hover {
@@ -463,4 +468,278 @@ body {
 
 .creator {
     font-weight: 600;
+}
+
+// Media
+//=================
+@media (max-width: 1200px) {
+
+    // Projects
+    .project__item {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    // Footer
+    .footer {
+        background-color: darken(@green, 10%);
+    }
+}
+
+@media (max-width: 880px) {
+
+    // Intro
+    .intro__title {
+        font-size: 35px;
+    }
+
+    .intro {
+        height: 100%;
+        padding: 130px 0 90px;
+    }
+
+    //Skills
+    .skills__item {
+        width: 50%;
+    }
+
+    // Project
+    .project__item {
+        height: 480px;
+    }
+
+    // Button
+    .btn {
+        font-size: 14px;
+    }
+
+    .btn--sm {
+        font-size: 12px;
+    }
+
+    // All
+    .projects,
+    .profile,
+    .skills {
+        padding: 70px 0;
+    }
+
+    //Header
+    .header__inner {
+        padding: 15px 0;
+    }
+
+    .header__logo {
+        font-size: 24px;
+    }
+
+    // Profile
+    .profile__title {
+        font-size: 35px;
+    } 
+}
+
+@media (max-width: 680px){
+
+    // Header
+    .header__logo{
+        font-size: 20px;
+    }
+
+    .nav{
+        font-size: 16px;
+    }
+
+    // Intro
+    .intro{
+        height: 100%;
+        padding: 100px 0 40px; 
+    }
+
+    .intro__title{
+        font-size: 30px;
+    }
+
+    // Profile
+    .profile__title{
+        font-size: 30px;
+    }
+
+    .profile__text{
+        line-height: 1.4;
+    }
+
+    // Skill
+    .skills__item{
+        width: 100%;
+    }
+
+    // Projects   
+    .projects__inner{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .project__item{
+        width: 70%;
+        height: 400px;
+    }
+
+    .projects__title{
+        font-size: 12px;
+    }
+
+    .projects__text{
+        font-size: 12px;
+    }
+
+    // All
+    .projects,
+    .profile,
+    .skills {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 530px){
+
+    // Header
+    .header__logo{
+        font-size: 16px;
+    }
+
+    .nav{
+        font-size: 12px;
+    }
+
+    // Intro
+    .intro__title{
+        font-size: 25px;
+    }
+
+    // Profile
+    .profile__title{
+        font-size: 24px;
+    }
+
+    .profile__text{
+        font-size: 14px;
+    }
+
+    .profile__info{
+        font-size: 14px;
+    }
+
+    // Button
+    .btn{
+        font-size: 12px;
+
+        &--sm{
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 420px){
+
+    // Header
+    .header__inner{
+        padding: 8px 0;
+    }
+
+    // Intro
+    .intro{
+        height: 100%;
+        padding: 100px 0 40px;
+    }
+
+    .intro__title{
+        font-size: 20px;
+    }
+
+    //Skills
+    .skills__img{
+        height: 50px;
+        width: 50px;
+    }
+
+    // Footer
+    .creator{
+        display: none;
+    }
+
+    .footer__lincks{
+        width: 30%;
+    }
+
+     // All
+     .projects,
+     .profile {
+         padding: 20px 0;
+     }
+
+     .skills{
+         padding: 0 0 20px;
+     }
+}
+
+@media (max-width: 380px){
+
+    // Header
+    .header__inner{
+        padding: 5px 0 0;
+    }
+
+    .header__logo{
+        font-size: 12px;
+    }
+
+    .nav{
+        font-size: 10px;
+    }
+
+    //Intro 
+    .intro__title{
+        font-size: 15px;
+    }
+
+    // Profile
+    .profile{
+        padding: 40px 0 0;
+    }
+
+    .profile__inner{
+        max-width: 100%;
+    }
+
+    .profile__title{
+        font-size: 15px;
+    }
+
+    .profile__text{
+        font-size: 13px;
+    }
+
+    .profile__info{
+        font-size: 13px;
+    }    
+
+    // Project
+    .project__info{
+        padding: 5px;
+    }
+
+    .project__item{
+        height: 350px;
+    }
+
+    // Button
+    .btn{
+        font-size: 10px;
+    }
+
+    // Footer
+    .footer__lincks{
+        width: 30%;
+    }
 }
