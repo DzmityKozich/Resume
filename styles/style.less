@@ -415,16 +415,21 @@ body {
     color: lighten(@black, 20%);
     font-size: 16px;
     font-weight: 300;
-    // height: 70%;
-    // text-overflow: ellipsis;
-    // overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .projects__tech{
+    text-transform: uppercase;
+    color: darken(@green, 10%);
+}
+
+.projects__tech-icons{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-height: 100px;
+    max-height: 30%;
 }
 
 .projects__tech-icon{
@@ -603,6 +608,10 @@ body {
         font-size: 12px;
     }
 
+    .projects__tech{
+        font-size: 11px;
+    }
+
     .projects__text{
         font-size: 12px;
     }
@@ -642,11 +651,6 @@ body {
 
     .profile__info{
         font-size: 14px;
-    }
-
-    // Projects
-    .projects__tech{
-        max-height: 75px;
     }
 
     // Button

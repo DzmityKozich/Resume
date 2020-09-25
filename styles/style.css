@@ -327,12 +327,19 @@ body {
   color: #47525d;
   font-size: 16px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .projects__tech {
+  text-transform: uppercase;
+  color: #59e441;
+}
+.projects__tech-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  max-height: 100px;
+  max-height: 30%;
 }
 .projects__tech-icon {
   width: 20%;
@@ -458,6 +465,9 @@ body {
   .projects__title {
     font-size: 12px;
   }
+  .projects__tech {
+    font-size: 11px;
+  }
   .projects__text {
     font-size: 12px;
   }
@@ -485,9 +495,6 @@ body {
   }
   .profile__info {
     font-size: 14px;
-  }
-  .projects__tech {
-    max-height: 75px;
   }
   .btn {
     font-size: 12px;
