@@ -94,6 +94,17 @@ body {
     height: auto;
 }
 
+// SVG
+.svg{
+    &--ts {
+        fill: rgb(0, 0, 255);
+    }
+
+    &--spring {
+        fill: #6db33f;
+    }
+}
+
 // Header
 .header {
     background-color: transparent;
@@ -308,14 +319,6 @@ body {
     width: 100px;
     height: 100px;
     margin-left: 10px;
-
-    &--ts {
-        fill: rgb(0, 0, 255);
-    }
-
-    &--spring {
-        fill: #6db33f;
-    }
 }
 
 
@@ -392,18 +395,6 @@ body {
     height: 50%;
     display: flex;
     flex-direction: column;
-
-}
-
-.projects__text {
-    line-height: 1.3;
-    padding: 0;
-    color: lighten(@black, 20%);
-    font-size: 16px;
-    font-weight: 300;
-    height: 70%;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 .projects__title {
@@ -416,6 +407,29 @@ body {
     &:hover {
         color: darken(@green, 8%);
     }
+}
+
+.projects__text {
+    line-height: 1.3;
+    padding: 0;
+    color: lighten(@black, 20%);
+    font-size: 16px;
+    font-weight: 300;
+    // height: 70%;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+}
+
+.projects__tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 100px;
+}
+
+.projects__tech-icon{
+    width: 20%;
+    height: auto;
 }
 
 .projects__btn {
@@ -630,9 +644,15 @@ body {
         font-size: 14px;
     }
 
+    // Projects
+    .projects__tech{
+        max-height: 75px;
+    }
+
     // Button
     .btn{
         font-size: 12px;
+        border: 2px @black solid;
 
         &--sm{
             font-size: 10px;
